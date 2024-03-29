@@ -1,0 +1,106 @@
+:root {
+    --vinho: #8E2424;
+    --cinza-escuro: #3A404E;
+    --cinza: #667085;
+    --cinza-claro: #98A2B3;
+    --preto: #101828;
+    --branco: #ffffff;
+
+    --fonte-inter: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-inter);
+    padding: 2% 10%;
+}
+.cabecalho {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+.icon-titulo {
+    font-size: 1.12rem;
+    font-weight: 500;
+    padding-left: 5%;
+}
+.navbar {
+    display: flex;
+    gap: 32px;
+}
+.navbar-item, .botoes-item {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--cinza);
+    margin: auto;
+}
+.cabecalho__botoes {
+    display: flex;
+    gap: 12px;
+}
+.botoes-cadastro {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--branco);
+    background-color: var(--vinho);
+    text-decoration: none;
+    padding: 8%;
+    border-radius: 8px;
+}
+.container-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 15%;
+}
+.container-span {
+    color: var(--vinho);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8%;
+}
+.container-titulo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--preto);
+    margin-bottom: 8%;
+}
+.container-texto {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cinza);
+    text-align: center;
+    margin-bottom: 8%;
+}
+.metricas-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 32px;
+    margin-bottom: 10%;
+}
+.metricas-coluna__titulo {
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: var(--vinho);
+    padding-bottom: 8%;
+}
+.metricas-coluna__subtitulo {
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--preto);
+    padding-bottom: 5%;
+}
+.metricas-coluna__texto {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cinza);
+}
+.metricas-coluna:nth-child(4) {
+    width: 90%;
+}
