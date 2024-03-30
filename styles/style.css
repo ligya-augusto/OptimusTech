@@ -6,6 +6,7 @@
     --cinza-claro: #98A2B3;
     --preto: #101828;
     --branco: #ffffff;
+    --branco-escuro: #F9FAFB;
 
     --fonte-inter: "Inter", sans-serif;
 }
@@ -13,7 +14,7 @@
 body {
     background-color: var(--branco);
     font-family: var(--fonte-inter);
-    padding: 2% 10%;
+    
 }
 .cabecalho {
     display: flex;
@@ -53,31 +54,33 @@ body {
     padding: 8%;
     border-radius: 8px;
 }
+.container, .cabecalho {
+    padding: 2% 8%;
+}
 .container-cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10% 15%;
+    margin: 8% 13%;
 }
 .container-span {
     color: var(--vinho);
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
 }
 .container-titulo {
     font-size: 3rem;
     font-weight: 600;
     color: var(--preto);
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 .container-texto {
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--cinza);
     text-align: center;
-    margin-bottom: 8%;
 }
 .metricas-container {
     display: grid;
@@ -133,4 +136,124 @@ body {
 }
 .vagas-image {
     width: 100%;
+}
+.lista-vagas {
+    padding: 5% 20%;
+}
+.lista-titulo {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--preto);
+    margin: 10% 0 5% 0;
+}
+.vagas-tipo {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 16px;
+    padding: 5%;
+    margin: 3% 0 3% 2%;
+}
+.product-titulo { 
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--preto);
+}
+.vagas-tempo {
+    padding-top: 5%;
+}
+.vagas-tempo__texto {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cinza-claro);
+    padding-right: 5%;
+}
+.container-depoimentos {
+    background-color: var(--vermelho);
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.depoimentos-span {
+    font-size: 0.87rem;
+    font-weight: 600;
+    color: var(--vinho);
+}
+.depoimentos-titulo {
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: var(--preto);
+    padding: 4% 0;
+    text-align: center;
+}
+.depoimentos-nome {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--preto);
+    padding: 2% 0 1% 0;
+}
+.depoimentos-texto {
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: var(--cinza);
+}
+.rodape {
+    margin-top: 10%;
+}
+.rodape-div {
+    background-color: var(--branco-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rodape-titulo {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--preto);
+    padding-top: 5%;
+}
+.rodape-texto {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cinza);
+    padding: 2% 0;
+}
+.rodape-email {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 1%;
+}
+.email-input { 
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 4px;
+    padding: 3%;
+    margin: 4%;
+    width: 90%;
+}
+.email-input::placeholder {
+    font-family: var(--fonte-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cinza);
+}
+.email-botao {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--branco);
+    background-color: var(--vinho);
+    padding: 3%;
+    border-radius: 8px;
+    border: transparent;
+    width: 40%;  
+}
+.rodape-direitos {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cinza-claro);
+    padding-bottom: 10%;
 }
