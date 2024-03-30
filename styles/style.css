@@ -1,5 +1,6 @@
 :root {
     --vinho: #8E2424;
+    --vermelho: #8e242410;
     --cinza-escuro: #3A404E;
     --cinza: #667085;
     --cinza-claro: #98A2B3;
@@ -102,5 +103,34 @@ body {
     color: var(--cinza);
 }
 .metricas-coluna:nth-child(4) {
-    width: 90%;
+    width: 80%;
+}
+.vagas { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vagas-span {
+    font-size: 0.87rem;
+    font-weight: 500;
+    color: var(--vinho);
+    background-color: var(--vermelho);
+    padding: 0.8%;
+    border-radius: 16px;
+}
+.vagas-titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--preto);
+    margin: 2% 0;
+}
+.vagas-texto {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cinza);
+    margin-bottom: 5%;
+}
+.vagas-image {
+    width: 100%;
 }
